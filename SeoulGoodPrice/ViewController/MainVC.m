@@ -87,6 +87,7 @@
     ListVC *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"ListVC"];
     vc.code = [dicItem objectForKey:@"code"];
     vc.barName = [dicItem objectForKey:@"name"];
+    vc.tableCount = 0;
     [self.navigationController pushViewController:vc animated:true];
 }
 

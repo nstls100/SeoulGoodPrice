@@ -13,6 +13,11 @@
 		6B910F071FC4140200348642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B910F061FC4140200348642 /* Assets.xcassets */; };
 		6B910F0A1FC4140200348642 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B910F081FC4140200348642 /* LaunchScreen.storyboard */; };
 		6BA7DF6E1FC5228A0013D92D /* InfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA7DF6D1FC5228A0013D92D /* InfoVC.m */; };
+		6BA7DF701FC55BB20013D92D /* ApiGatewayMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA7DF6F1FC55BB20013D92D /* ApiGatewayMac.framework */; };
+		6BA7DF711FC55BB20013D92D /* ApiGatewayMac.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA7DF6F1FC55BB20013D92D /* ApiGatewayMac.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6BA7DF741FC55BDA0013D92D /* NMapViewerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA7DF731FC55BDA0013D92D /* NMapViewerSDK.framework */; };
+		6BA7DF781FC55DE30013D92D /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA7DF771FC55DE30013D92D /* MapVC.m */; };
+		6BA7DF7F1FC5620A0013D92D /* NMapViewResources.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA7DF7E1FC5620A0013D92D /* NMapViewResources.m */; };
 		6BAA02E81FC451FD00F5BE24 /* ListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA02E71FC451FD00F5BE24 /* ListVC.m */; };
 		6BAA02EB1FC455B100F5BE24 /* ListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA02EA1FC455B100F5BE24 /* ListCell.m */; };
 		6BAA02EE1FC458D100F5BE24 /* PriceData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA02ED1FC458D100F5BE24 /* PriceData.m */; };
@@ -20,6 +25,20 @@
 		6BD4EB751FC41BC100D5844D /* CategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD4EB741FC41BC100D5844D /* CategoryCell.m */; };
 		D22010519D873F939383144F /* libPods-SeoulGoodPrice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E274C2A6658B33E2AF9F5C /* libPods-SeoulGoodPrice.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6BA7DF721FC55BB20013D92D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6BA7DF711FC55BB20013D92D /* ApiGatewayMac.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6B910EF71FC4140200348642 /* SeoulGoodPrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeoulGoodPrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +51,12 @@
 		6B910F0B1FC4140200348642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BA7DF6C1FC5228A0013D92D /* InfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoVC.h; sourceTree = "<group>"; };
 		6BA7DF6D1FC5228A0013D92D /* InfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoVC.m; sourceTree = "<group>"; };
+		6BA7DF6F1FC55BB20013D92D /* ApiGatewayMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ApiGatewayMac.framework; sourceTree = "<group>"; };
+		6BA7DF731FC55BDA0013D92D /* NMapViewerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NMapViewerSDK.framework; path = "../../Downloads/maps-2.ios-master/Frameworks/NMapViewerSDK.framework"; sourceTree = "<group>"; };
+		6BA7DF761FC55DE30013D92D /* MapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapVC.h; sourceTree = "<group>"; };
+		6BA7DF771FC55DE30013D92D /* MapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapVC.m; sourceTree = "<group>"; };
+		6BA7DF7D1FC5620A0013D92D /* NMapViewResources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMapViewResources.h; sourceTree = "<group>"; };
+		6BA7DF7E1FC5620A0013D92D /* NMapViewResources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMapViewResources.m; sourceTree = "<group>"; };
 		6BAA02E61FC451FD00F5BE24 /* ListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListVC.h; sourceTree = "<group>"; };
 		6BAA02E71FC451FD00F5BE24 /* ListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListVC.m; sourceTree = "<group>"; };
 		6BAA02E91FC455B100F5BE24 /* ListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListCell.h; sourceTree = "<group>"; };
@@ -52,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BA7DF741FC55BDA0013D92D /* NMapViewerSDK.framework in Frameworks */,
+				6BA7DF701FC55BB20013D92D /* ApiGatewayMac.framework in Frameworks */,
 				D22010519D873F939383144F /* libPods-SeoulGoodPrice.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +98,7 @@
 		6A5CE58B5D60262B6D4B0372 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6BA7DF731FC55BDA0013D92D /* NMapViewerSDK.framework */,
 				98E274C2A6658B33E2AF9F5C /* libPods-SeoulGoodPrice.a */,
 			);
 			name = Frameworks;
@@ -79,6 +107,7 @@
 		6B910EEE1FC4140200348642 = {
 			isa = PBXGroup;
 			children = (
+				6BA7DF6F1FC55BB20013D92D /* ApiGatewayMac.framework */,
 				6B910EF91FC4140200348642 /* SeoulGoodPrice */,
 				6B910EF81FC4140200348642 /* Products */,
 				5CBA2A7FC17C0202CB6ADA10 /* Pods */,
@@ -97,6 +126,7 @@
 		6B910EF91FC4140200348642 /* SeoulGoodPrice */ = {
 			isa = PBXGroup;
 			children = (
+				6BA7DF7C1FC561D20013D92D /* libs */,
 				6BD4EB721FC41BA400D5844D /* Cell */,
 				6BD4EB6E1FC4198400D5844D /* ViewController */,
 				6B910EFD1FC4140200348642 /* AppDelegate.h */,
@@ -120,6 +150,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6BA7DF7C1FC561D20013D92D /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				6BA7DF7D1FC5620A0013D92D /* NMapViewResources.h */,
+				6BA7DF7E1FC5620A0013D92D /* NMapViewResources.m */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
 		6BD4EB6E1FC4198400D5844D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +168,8 @@
 				6BAA02E71FC451FD00F5BE24 /* ListVC.m */,
 				6BA7DF6C1FC5228A0013D92D /* InfoVC.h */,
 				6BA7DF6D1FC5228A0013D92D /* InfoVC.m */,
+				6BA7DF761FC55DE30013D92D /* MapVC.h */,
+				6BA7DF771FC55DE30013D92D /* MapVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -157,6 +198,8 @@
 				6B910EF51FC4140200348642 /* Resources */,
 				FC22E6EB89FAF92BB03CBDC1 /* [CP] Embed Pods Frameworks */,
 				FD54271F0DD3E905C09126D5 /* [CP] Copy Pods Resources */,
+				6BA7DF721FC55BB20013D92D /* Embed Frameworks */,
+				6BA7DF751FC55CD00013D92D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -214,6 +257,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6BA7DF751FC55CD00013D92D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/Users/leejaehong/Downloads/maps-2.ios-master/Scripts/strip-frameworks.sh";
+		};
 		7DC7C408EDA46FE943125EBB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -272,8 +328,10 @@
 				6BA7DF6E1FC5228A0013D92D /* InfoVC.m in Sources */,
 				6BD4EB711FC4199400D5844D /* MainVC.m in Sources */,
 				6BAA02EB1FC455B100F5BE24 /* ListCell.m in Sources */,
+				6BA7DF781FC55DE30013D92D /* MapVC.m in Sources */,
 				6B910EFF1FC4140200348642 /* AppDelegate.m in Sources */,
 				6B910EFC1FC4140200348642 /* main.m in Sources */,
+				6BA7DF7F1FC5620A0013D92D /* NMapViewResources.m in Sources */,
 				6BAA02E81FC451FD00F5BE24 /* ListVC.m in Sources */,
 				6BD4EB751FC41BC100D5844D /* CategoryCell.m in Sources */,
 				6BAA02EE1FC458D100F5BE24 /* PriceData.m in Sources */,
@@ -397,8 +455,22 @@
 			baseConfigurationReference = B38056D988E21A690BFBB9D2 /* Pods-SeoulGoodPrice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/Users/leejaehong/Downloads/maps-2.ios-master/Frameworks",
+				);
 				INFOPLIST_FILE = SeoulGoodPrice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-Objc",
+					"-lxml2",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = lee.SeoulGoodPrice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -409,8 +481,22 @@
 			baseConfigurationReference = D188B5D3420C48416E9AF03E /* Pods-SeoulGoodPrice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/Users/leejaehong/Downloads/maps-2.ios-master/Frameworks",
+				);
 				INFOPLIST_FILE = SeoulGoodPrice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-Objc",
+					"-lxml2",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = lee.SeoulGoodPrice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

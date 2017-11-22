@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "PriceData.h"
 #import <SDWebImage/UIImageView+WebCache.h>
+#import <MapKit/MapKit.h>
+#import "MapVC.h"
 
 @interface InfoVC : UIViewController
 

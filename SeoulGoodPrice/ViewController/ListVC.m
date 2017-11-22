@@ -32,7 +32,8 @@
     [self.navigationItem setLeftBarButtonItem:topLeftBtnItem];
     
     _priceData = [[PriceData alloc] init];
-    _dataList = [NSMutableArray arrayWithArray:[_priceData getDataFromAPI:_code]];
+    _dataList = [NSMutableArray arrayWithArray:[_priceData getDataFromAPI:_code :_tableCount]];
+    _tableCount = [_dataList count];
     
     if(_dataList.count == 0){
         UIAlertController *alertController = [UIAlertController
@@ -93,6 +94,51 @@
     
     [self.navigationController pushViewController:vc animated:true];
 }
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSInteger lastSectionIndex = [tableView numberOfSections] - 1;
+    NSInteger lastRowIndex = [tableView numberOfRowsInSection:lastSectionIndex] - 1;
+    
+    if ((indexPath.section == lastSectionIndex) && (indexPath.row == lastRowIndex)) {
+        UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+        spinner.frame = CGRectMake(0, 0, self.tableView.bounds.size.width, 44);
+        _tableView.tableFooterView = spinner;
+        
+        [spinner startAnimating];
+        
+        dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
+            //Background Thread
+             NSArray *data = [_priceData getDataFromAPI:_code :_tableCount + 1];
+            
+            dispatch_async(dispatch_get_main_queue(), ^(void){
+                //Run UI Updates
+                
+                if(data == nil){
+                    spinner.frame = CGRectMake(0, 0, self.tableView.bounds.size.width, 0);
+                    _tableView.tableFooterView = spinner;
+                    
+                    [spinner stopAnimating];
+                    
+                    return;
+                }
+                
+                [_dataList addObjectsFromArray:data];
+                _tableCount = [_dataList count];
+                [_tableView reloadData];
+                [spinner stopAnimating];
+            });
+        });
+        
+       
+        
+        
+
+    }
+}
+
+
+
 
 
 @end

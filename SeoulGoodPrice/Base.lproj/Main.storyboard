@@ -229,6 +229,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VfQ-ai-S9A"/>
+                    <connections>
+                        <outlet property="tableView" destination="Wc5-yH-iHT" id="973-SF-oCR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DeP-zW-zbO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -401,6 +404,50 @@
             </objects>
             <point key="canvasLocation" x="3679.1999999999998" y="121.88905547226388"/>
         </scene>
+        <!--MapVC-->
+        <scene sceneID="4g4-Nx-oO9">
+            <objects>
+                <viewController storyboardIdentifier="MapVC" id="07Q-YC-pvO" customClass="MapVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7RD-8b-Ejb"/>
+                        <viewControllerLayoutGuide type="bottom" id="pBg-bI-HPZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i0q-hE-x4M">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="calloutLabel" destination="zUC-EP-nIl" id="H14-Ik-O0b"/>
+                        <outlet property="calloutView" destination="brv-WN-0u2" id="Nc7-LZ-2gs"/>
+                    </connections>
+                </viewController>
+                <view contentMode="scaleToFill" id="brv-WN-0u2">
+                    <rect key="frame" x="0.0" y="0.0" width="250" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="v4_tooltip_distance1" translatesAutoresizingMaskIntoConstraints="NO" id="Fct-eH-3By">
+                            <rect key="frame" x="0.0" y="0.0" width="250" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="v4_tooltip_distance2" translatesAutoresizingMaskIntoConstraints="NO" id="Rj2-cd-dgX">
+                            <rect key="frame" x="121" y="27" width="8" height="6"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUC-EP-nIl">
+                            <rect key="frame" x="6" y="4" width="238" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5mv-gB-o7o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4450" y="125"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Jfk-mh-L9A">
             <objects>
@@ -445,5 +492,7 @@
         <image name="ic_phone" width="24" height="24"/>
         <image name="ic_place" width="24" height="24"/>
         <image name="ic_star_rate" width="18" height="18"/>
+        <image name="v4_tooltip_distance1" width="20" height="28"/>
+        <image name="v4_tooltip_distance2" width="7" height="6"/>
     </resources>
 </document>

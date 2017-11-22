@@ -23,8 +23,6 @@
 @property (strong, nonatomic) NSString *shPhoto;    // 업소 사진
 @property (strong, nonatomic) NSString *baseYm;    // 기준년월
 @property (strong, nonatomic) NSString *thumbnailImage;  // 썸네일 이미지를 담을 UIimage
-@property NSInteger curIndex;
 
-
-- (NSArray *) getDataFromAPI :(NSString*)code;
+- (NSArray *) getDataFromAPI :(NSString*)code :(NSInteger)listCount;
 @end

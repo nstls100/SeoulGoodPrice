@@ -29,15 +29,15 @@
     return self;
 }
 
-- (NSArray *) getDataFromAPI :(NSString*)code
+- (NSArray *) getDataFromAPI :(NSString*)code :(NSInteger)listCount
 {
     NSString *url = @"http://openapi.seoul.go.kr:8088";
     NSString *key = @"6f4a4471636e737439366c42446d66";
     NSString *type = @"json";
     NSString *serviceName = @"ListPriceModelStoreService";
-    NSInteger startIndex = _curIndex;
-    NSInteger endIndex = _curIndex + 10;
-    _curIndex += 11;
+    
+    NSInteger startIndex = listCount;
+    NSInteger endIndex = listCount + 10;
     
     NSString *inputUrl = [NSString stringWithFormat: @"%@/%@/%@/%@/%ld/%ld/%@", url, key, type, serviceName, startIndex, (long)endIndex, code];
     
@@ -47,6 +47,12 @@
     
     if(json != nil){
         NSMutableDictionary *listPMSS = [json valueForKey: @"ListPriceModelStoreService"];
+        NSInteger totalCount = [[listPMSS valueForKey:@"list_total_count"] integerValue];
+        
+        //NSLog(@"%ld, %ld", (long)totalCount, (long)listCount);
+        if(totalCount == 0 && totalCount < listCount){
+            return nil;
+        }
         NSArray *row = [listPMSS valueForKey: @"row"];
         
         NSMutableArray *lists = [[NSMutableArray alloc]init];
