@@ -29,7 +29,7 @@
     return self;
 }
 
-- (NSArray *) getDataFromAPI
+- (NSArray *) getDataFromAPI :(NSString*)code
 {
     NSString *url = @"http://openapi.seoul.go.kr:8088";
     NSString *key = @"6f4a4471636e737439366c42446d66";
@@ -39,7 +39,7 @@
     NSInteger endIndex = _curIndex + 10;
     _curIndex += 11;
     
-    NSString *inputUrl = [NSString stringWithFormat: @"%@/%@/%@/%@/%ld/%ld", url, key, type, serviceName, startIndex, (long)endIndex];
+    NSString *inputUrl = [NSString stringWithFormat: @"%@/%@/%@/%@/%ld/%ld/%@", url, key, type, serviceName, startIndex, (long)endIndex, code];
     
     NSError *error;
     NSData *data = [NSData dataWithContentsOfURL: [NSURL URLWithString:inputUrl]];

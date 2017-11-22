@@ -16,8 +16,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet UILabel *rcmnLabel;
 @property (strong, nonatomic) IBOutlet UILabel *addressLabel;
-
-@property NSInteger idx;
 @property (strong, nonatomic) PriceData *dicItem;
 
 -(void) setCellData;

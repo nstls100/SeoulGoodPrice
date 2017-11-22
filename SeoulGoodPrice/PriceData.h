@@ -26,5 +26,5 @@
 @property NSInteger curIndex;
 
 
-- (NSArray *) getDataFromAPI;
+- (NSArray *) getDataFromAPI :(NSString*)code;
 @end

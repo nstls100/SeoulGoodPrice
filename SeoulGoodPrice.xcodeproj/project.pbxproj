@@ -12,6 +12,7 @@
 		6B910F051FC4140200348642 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B910F031FC4140200348642 /* Main.storyboard */; };
 		6B910F071FC4140200348642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B910F061FC4140200348642 /* Assets.xcassets */; };
 		6B910F0A1FC4140200348642 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B910F081FC4140200348642 /* LaunchScreen.storyboard */; };
+		6BA7DF6E1FC5228A0013D92D /* InfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA7DF6D1FC5228A0013D92D /* InfoVC.m */; };
 		6BAA02E81FC451FD00F5BE24 /* ListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA02E71FC451FD00F5BE24 /* ListVC.m */; };
 		6BAA02EB1FC455B100F5BE24 /* ListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA02EA1FC455B100F5BE24 /* ListCell.m */; };
 		6BAA02EE1FC458D100F5BE24 /* PriceData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA02ED1FC458D100F5BE24 /* PriceData.m */; };
@@ -29,6 +30,8 @@
 		6B910F061FC4140200348642 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B910F091FC4140200348642 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B910F0B1FC4140200348642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BA7DF6C1FC5228A0013D92D /* InfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoVC.h; sourceTree = "<group>"; };
+		6BA7DF6D1FC5228A0013D92D /* InfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoVC.m; sourceTree = "<group>"; };
 		6BAA02E61FC451FD00F5BE24 /* ListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListVC.h; sourceTree = "<group>"; };
 		6BAA02E71FC451FD00F5BE24 /* ListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListVC.m; sourceTree = "<group>"; };
 		6BAA02E91FC455B100F5BE24 /* ListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListCell.h; sourceTree = "<group>"; };
@@ -124,6 +127,8 @@
 				6BD4EB701FC4199400D5844D /* MainVC.m */,
 				6BAA02E61FC451FD00F5BE24 /* ListVC.h */,
 				6BAA02E71FC451FD00F5BE24 /* ListVC.m */,
+				6BA7DF6C1FC5228A0013D92D /* InfoVC.h */,
+				6BA7DF6D1FC5228A0013D92D /* InfoVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -264,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BA7DF6E1FC5228A0013D92D /* InfoVC.m in Sources */,
 				6BD4EB711FC4199400D5844D /* MainVC.m in Sources */,
 				6BAA02EB1FC455B100F5BE24 /* ListCell.m in Sources */,
 				6B910EFF1FC4140200348642 /* AppDelegate.m in Sources */,

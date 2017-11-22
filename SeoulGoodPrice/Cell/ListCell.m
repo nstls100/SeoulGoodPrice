@@ -25,7 +25,7 @@
     NSCharacterSet *allowedCharacterSet = [NSCharacterSet URLQueryAllowedCharacterSet];
     NSURL *imageURL = [NSURL URLWithString:[_dicItem.shPhoto stringByAddingPercentEncodingWithAllowedCharacters:allowedCharacterSet]];
     
-    [_imgView sd_setImageWithURL:imageURL placeholderImage:nil];
+    [_imgView sd_setImageWithURL:imageURL placeholderImage:[UIImage imageNamed:@"NoImage"]];
     _titleLabel.text = _dicItem.shName;
     _rcmnLabel.text = [NSString stringWithFormat:@"%@",_dicItem.shRcmn];
     _addressLabel.text = _dicItem.shAddr;
